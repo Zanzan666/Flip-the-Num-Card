@@ -21,19 +21,19 @@ $(document).keypress(function() {
 
 function level_selector(){
   checking=false;
-  if (game_level<=4)
+  if (game_level<=2)
   {
     max_num=4;
     row_num=2;
     col_num=2;
   }
-  else if (game_level<=6)
+  else if (game_level<=4)
   {
     max_num=6;
     row_num=2;
     col_num=3;
   }
-  else if (game_level<=9)
+  else if (game_level<=7)
   {
     max_num=9;
     row_num=3;
@@ -85,6 +85,7 @@ function level_selector(){
         if (expecting_num>max_num)
       {
         game_level++;
+        $("#game_level-title").text("Awesome");
         setTimeout(function () {
           $("#game_level-title").text("Leveling up");
           setTimeout(function () {
