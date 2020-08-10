@@ -77,7 +77,7 @@ function level_selector(){
   $(".btn").click(function() {
     if (checking==true)
     {
-      $(this).children(".text-tile").css("display","initial");
+      $(this).children(".text-tile").css("display","block");
       var this_num = $(this).children(".text-tile").text();
       if (this_num==expecting_num)
       {
