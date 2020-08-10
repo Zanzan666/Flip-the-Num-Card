@@ -12,4 +12,4 @@ A number memorization game
 
 
 ## Note
-The sound and sound event trigger is borrowed from the project [Simon's Game](https://github.com/Zanzan666/game-trial) learned in [Angela Yu's Web developor course](https://www.udemy.com/course/the-complete-web-development-bootcamp/).
+The sound effect and sound event trigger is borrowed from the project [Simon's Game](https://github.com/Zanzan666/game-trial) learned in [Angela Yu's Web developor course](https://www.udemy.com/course/the-complete-web-development-bootcamp/).
