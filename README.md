@@ -10,7 +10,3 @@ A number memorization game
 ![Image1](screenshots/show1.png)
 ![Image2](screenshots/show2.png)
 ![Image3](screenshots/show3.png)
-
-
-## Note
-The sound effect and sound event trigger is borrowed from the project [Simon's Game](https://github.com/Zanzan666/game-trial) learned in [Angela Yu's Web developor course](https://www.udemy.com/course/the-complete-web-development-bootcamp/).
