@@ -83,27 +83,32 @@ function level_selector(){
       {
         expecting_num+=1;
         if (expecting_num>max_num)
-      {
-        game_level++;
-        $("#game_level-title").text("Awesome");
-        setTimeout(function () {
-          $("#game_level-title").text("Leveling up");
+        {
+          game_level++;
+          playSound("level.wav");
+          $("#game_level-title").text("Awesome");
           setTimeout(function () {
-            $("#game_level-title").text("Leveling up.");
+            $("#game_level-title").text("Leveling up");
             setTimeout(function () {
-              $("#game_level-title").text("Leveling up..");
+              $("#game_level-title").text("Leveling up.");
               setTimeout(function () {
-                $("#game_level-title").text("Level " + game_level);
-                level_selector();
+                $("#game_level-title").text("Leveling up..");
+                setTimeout(function () {
+                  $("#game_level-title").text("Level " + game_level);
+                  level_selector();
+                }, 400);
               }, 400);
             }, 400);
           }, 400);
-        }, 400);
-      }
+        }
+        else
+        {
+          playSound("right.wav");
+        }
       }
       else
       {
-        playSound("wrong");
+        playSound("wrong.mp3");
         $("body").addClass("game-over");
         $("#game_level-title").text("Game Over, Press Any Key to Restart");
         setTimeout(function () {
@@ -117,7 +122,7 @@ function level_selector(){
 
 
 function playSound(name) {
-  var audio = new Audio("sounds/" + name + ".mp3");
+  var audio = new Audio("sounds/" + name);
   audio.play();
 }
 
